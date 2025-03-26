@@ -66,7 +66,8 @@ public class Main {
                             run.add(str[i]);
                         }
                         ProcessBuilder pb = new ProcessBuilder(run);
-                        pb.directory(Path.of(getCommandDir(fullPath)).toFile()); // * set the working directory to where the executable is located
+                        // ? (i will examine it in the future, but for now it is causing errors.)
+                        // pb.directory(Path.of(getCommandDir(fullPath)).toFile()); // * set the working directory to where the executable is located
                         pb.inheritIO(); // * redirect the child process's input/output to the current shell (tdout/stderr).
                         try {
                             Process proc = pb.start();
