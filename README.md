@@ -1,35 +1,32 @@
-[![progress-banner](https://backend.codecrafters.io/progress/shell/d7f8afa3-e503-4335-8f4e-8868b7a05ab4)](https://app.codecrafters.io/users/codecrafters-bot?r=2qF)
+# Phun Shell
 
-This is a starting point for Java solutions to the
-["Build Your Own Shell" Challenge](https://app.codecrafters.io/courses/shell/overview).
+This is a basic shell implementation written in Java.  
+I started this project to improve my Java skills by building a custom shell from scratch.
 
-In this challenge, you'll build your own POSIX compliant shell that's capable of
-interpreting shell commands, running external programs and builtin commands like
-cd, pwd, echo and more. Along the way, you'll learn about shell command parsing,
-REPLs, builtin commands, and more.
+I'm also using test cases and challenges from [CodeCrafters.io](https://codecrafters.io) as a reference to guide the development and verify the behavior of the shell.
 
-**Note**: If you're viewing this repo on GitHub, head over to
-[codecrafters.io](https://codecrafters.io) to try the challenge.
+## 🔧 Features
 
-# Passing the first stage
+- `exit 0` to exit the shell
+- `echo` command support
+- `type` command to check if a command is a shell builtin or an external executable
+- Executes external system commands using `ProcessBuilder`
 
-The entry point for your `shell` implementation is in `src/main/java/Main.java`.
-Study and uncomment the relevant code, and push your changes to pass the first
-stage:
+## 📦 How to Run
 
-```sh
-git commit -am "pass 1st stage" # any msg
-git push origin master
+Make sure you have Java installed. Then compile and run the project:
+
+```bash
+javac Main.java
+java Main
 ```
 
-Time to move on to the next stage!
+## 📁 Project Structure
 
-# Stage 2 & beyond
+- `Main.java` — Core shell logic: input reading, command parsing, execution
 
-Note: This section is for stages 2 and beyond.
+---
 
-1. Ensure you have `mvn` installed locally
-1. Run `./your_program.sh` to run your program, which is implemented in
-   `src/main/java/Main.java`.
-1. Commit your changes and run `git push origin master` to submit your solution
-   to CodeCrafters. Test output will be streamed to your terminal.
+Feel free to explore, fork, or contribute!  
+If you notice any bugs, feel free to open an issue or suggest a fix.  
+Have an idea to improve the project? I'm open to suggestions and happy to collaborate!
